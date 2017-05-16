@@ -12,6 +12,13 @@
 /* 12 */   private int start_angle = 0;
 /*    */   private int shape;
 /*    */   
+           /**
+            Конструктор класса TitlesPanel.
+            Создаёт объект класса TitlesPanel.
+
+            @param _shape Параметр указывающий тип отображаемого объекта (звезда, треугольник, ...)
+            @return Объект класса TitlesPanel
+           */
 /*    */   public TitlesPanel(int _shape) {
 /* 16 */     this.is_done = true;
 /* 17 */     this.shape = _shape;
@@ -57,6 +64,11 @@
 /* 57 */     this.is_done = true;
 /*    */   }
 /*    */   
+           /**
+            Отрисовывает объект переданный в качестве параметра g
+
+            @param g Параметр содержащий отображаемый объект
+           */
 /*    */   public void paintComponent(Graphics g)
 /*    */   {
 /* 62 */     super.paintComponent(g);

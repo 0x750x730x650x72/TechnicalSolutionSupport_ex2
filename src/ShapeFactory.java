@@ -9,6 +9,12 @@
 /*  9 */   public int width = 25;
 /* 10 */   public int height = 25;
 /*    */   
+           /**
+            Конструктор класса ShapeFactory
+            Определяет какой тип отображаемой фигуры требуется и создаёт объект ей соответствующий.
+
+            @param shape_type Тип отображаемой фигуры (на данный момент не функционирует, захаркодил значение параметра = 3)
+           */
 /*    */   public ShapeFactory(int shape_type) {
 /* 13 */     this.stroke = new java.awt.BasicStroke(3.0F);
 /* 14 */     switch (3) {
@@ -58,6 +64,14 @@
 /*    */     }
 /*    */   }
 /*    */   
+           /**
+            Создаёт объект соответствующий звезде описанной входными параметрами
+            @param arms
+            @param center
+            @param rOuter
+            @param rInner
+            @return Объект типа java.awt.Shape
+            */
 /*    */   private static java.awt.Shape createStar(int arms, Point center, double rOuter, double rInner)
 /*    */   {
 /* 63 */     double angle = 3.141592653589793D / arms;
